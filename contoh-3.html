@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Formulir Biodata</title>
+    </head>
+
+    <body>
+        <p>Jenis Inputan</p>
+        <ol>
+            <li>Input Text</li>
+            <li>Password</li>
+            <li>Radio Button</li>
+            <li>Checkbox</li>
+            <li>Dropdown</li>
+            <li>Textarea</li>
+            <li>Hidden</li>
+            <li>Submit (Button)</li>
+            <li>Reset (Button)</li>
+        </ol>
+
+        <h1>Biodata</h1>
+
+        <form action="proses-simpan.php" method="post" enctype="multipart/form-data">
+            
+        Nama : <input type="text" name="nama" value="SBY" placeholder="Masukan Nama Anda"> <br>
+
+        Password: <input type="password" name="password" placeholder="Masukan Password Anda"> <br>
+
+        Jenis Kelamin: 
+        <input type="radio" name="kelamin" value="pria" checked> Pria
+        <input type="radio" name="kelamin" value="wanita"> Wanita
+        
+        <br>
+        
+        Kamu Punya Apa: <br>
+
+        <input type="checkbox" name="barang[]" value="laptop" checked> Laptop <br>
+        <input type="checkbox" name="barang[]" value="motor"> Motor <br>
+        <input type="checkbox" name="barang[]" value="mobil"> Mobil <br>
+        <input type="checkbox" name="barang[]" value="hp"> HP <br>
+        
+
+        Pekerjaan: 
+        <select name="pekerjaan">
+            <option value="irt">Ibu Rumah Tangga</option>
+            <option value="sekretaris">Sekretaris</option>
+            <option value="bidan">Bidan</option>
+            <option value="guru">Guru</option>
+            <option value="dokter">Dokter</option>
+            <option value="lainnya" selected>Lainnya</option>
+        </select>
+        <br>
+        
+        Deksripsikan Hidup Anda: <br>
+        <textarea name="deskripsi" placeholder="Hidup anda seperti apa?">Riang</textarea>
+
+        <input type="hidden" name="tanggal" value="23/09/2016">
+        <input type="hidden" name="id" value="4">
+
+        <br>
+        Foto: <input type="file" name="foto">
+        <br>
+
+        <input type="submit" value="Simpan">
+        <input type="reset" value="Putar Ulang">
+
+        </form>
+
+    </body>
+</html>
